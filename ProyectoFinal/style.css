@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@500&family=Raleway:wght@400&display=swap');
+:root{
+    --color-letra-texto: #8ecae6;
+    --color-letra-titulo: #212529;
+    --color-fondo: #e5e5e5;
+    --color-busqueda: #fff;
+    --color-secundario: #ffbf69;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 62.5%;
+    background-color: var(--color-fondo);
+}
+
+p{
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,h3{
+    font-family: 'Alexandria', sans-serif;
+}
+
+.logo{
+    width: 9rem;
+}
+
+.title{
+    color: var(--color-letra-titulo);
+    background-color: var(--color-busqueda);
+    display: flex;
+    justify-items: left;
+    flex-direction: column;
+    align-items: left;
+    margin: 1.5rem;
+}
+
+.buscador{
+    color: var(--color-letra-titulo);
+    background-color: var(--color-busqueda);
+    font-size: 2rem;
+    height: 13rem;
+    display: flex; 
+    flex-direction: row; /*Darle dirección a los elementos*/
+    justify-content: left;
+    align-items: center;
+    margin: 3rem;
+    padding-left: 15rem;
+}
+
+/*input{
+    position: relative;
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    width: 2%;
+    height: 2.8rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding-left: 2rem; /*Espacio de adentro hacia afuera
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+}
+*/
+
+input::placeholder{
+    top: 39%;
+}
+
+.limpiar{
+    font-size: 1rem;
+    width: 5%;
+    height: 3rem;
+    margin: 2rem 0 0 2rem;
+    border: none;
+    border-radius: 1.2rem;
+    background-color: var(--color-fondo);
+}
+
+.recetario{
+    color: var(--color-letra-titulo);
+    background-color: var(--color-busqueda);
+    font-size: 2rem;
+    height: 100%;
+    display: flex; 
+    flex-direction: column; /*Darle dirección a los elementos*/
+    justify-content: left;
+    align-items: left; /*Alinear los elementos*/
+    margin: 3rem;
+    padding: 4rem;
+}
+
+.populares{
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.recetario-cards{
+    display: grid;
+    grid-template-columns: repeat(4,8rem 1fr);
+    grid-template-rows: repeat(auto-fill, 10rem 1fr);
+    gap: 1em;
+    margin: 2rem;
+    align-items: center;
+}
+
+.recetario-cards grid{
+    border: 1px solid var(--color-secundario);
+}
